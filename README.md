@@ -1,6 +1,6 @@
 # GAN-CIFAR-10
 
-This project showcases the implementation of a Generative Adversarial Network (GAN) designed to generate realistic images using the CIFAR-10 dataset. A GAN comprises two competing neural networks: the generator, which creates synthetic data, and the discriminator, which evaluates its authenticity. Together, they iteratively improve to produce high-quality results.
+This project showcases the implementation of a Generative Adversarial Network (GAN) designed to generate realistic images using the CIFAR-10 dataset. A GAN comprises two competing neural networks: the generator, which creates synthetic data, and the discriminator, which evaluates its authenticity. Together, they iteratively improve to produce image augmentation.
 
 ---
 
@@ -50,6 +50,9 @@ The discriminator evaluates whether an input image is real or fake. Its architec
 - **Leaky ReLU activations** to address potential vanishing gradient issues.
 - **Dropout layers** to prevent overfitting.
 
+---
+**Image Augmentation**
+The training process generates periodic outputs, showcasing the improvements in image quality. The evaluation of the model can be seen when the losses of both networks decrease. If the loss of one model reduces and the other spikes, this indicates an error in training, which helps refine the image augmentation.
 ---
 
 ## Results
