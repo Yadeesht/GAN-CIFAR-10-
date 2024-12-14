@@ -51,8 +51,9 @@ The discriminator evaluates whether an input image is real or fake. Its architec
 - **Dropout layers** to prevent overfitting.
 
 ---
-**Image Augmentation**
+### Image Augumentation
 The training process generates periodic outputs, showcasing the improvements in image quality. The evaluation of the model can be seen when the losses of both networks decrease. If the loss of one model reduces and the other spikes, this indicates an error in training, which helps refine the image augmentation.
+
 ---
 
 ## Results
